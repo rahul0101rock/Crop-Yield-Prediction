@@ -11,7 +11,14 @@ data = df.dropna()
 sum_maxp = data["Production"].sum()
 data["percent_of_production"] = data["Production"].map(lambda x:(x/sum_maxp)*100)
 print(data.shape)
-data1 = data.drop(["District_Name","Crop_Year"],axis=1)
+dis=input("Enter the District Name: ")
+season=input("Enter the Season: ")
+s=list(data["Season"].unique())
+for x in s:
+    if season.title() in x:
+        sin=s.index(x)
+data_cu=data[data["District_Name"]==dis.upper()][data["Season"]==s[sin]]
+data1 = data_cu.drop(["State_Name","Crop_Year"],axis=1)
 data_dum = pd.get_dummies(data1)
 x = data_dum.drop("Production",axis=1)
 y = data_dum[["Production"]]
@@ -24,9 +31,6 @@ print("y_test :",y_test.shape)
 model = RandomForestRegressor()
 model.fit(x_train,y_train.values.ravel())
 print("Training Done...")
-
-filename = 'rf_model.sav'
-joblib.dump(model, filename)
 
 predict = model.predict(x_test)
 r = r2_score(y_test,predict)
