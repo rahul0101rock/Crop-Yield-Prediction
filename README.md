@@ -4,9 +4,7 @@
 https://github.com/rahul0101rock/CropYeldPrediction-App
 ### Server Side Coding
 https://github.com/rahul0101rock/Crop-Yield-Prediction-Django
-### App View
-![Screenshot](ss/app1.png)
-### Input Screen
+### Input And Output On Console Screen
 ![Screenshot](ss/input.png)
 ### Graph of Top 5 Crops in Given Region
 ![Screenshot](ss/plot.png)
