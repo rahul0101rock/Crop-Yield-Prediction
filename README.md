@@ -3,7 +3,7 @@
 ### For Trying ...
 ## [Click Here to Download App](https://github.com/rahul0101rock/Crop-Yield-Prediction/blob/master/Crop%20Yield%20Prediction%20APP.apk?raw=true)
 ### App Repo
-https://github.com/rahul0101rock/CropYeldPrediction-App
+https://github.com/rahul0101rock/CropYieldPrediction-App
 ### Server Side Coding
 https://github.com/rahul0101rock/crop_predict
 ### Input And Output On Console Screen
